@@ -1,14 +1,4 @@
 
-/*
-Chiedi all’utente il suo nome,
-poi chiedi il suo cognome,
-poi chiedi il suo colore preferito
-Infine scrivi sulla pagina nomecognomecolorepreferito23
-*/
-
-
-
-
 //name e surname
 
 const firstName = prompt('Inserisci nome');
@@ -38,6 +28,11 @@ console.log( 'La variabile myNumber vale: ' + myNumber);
 document.getElementById('my-number').innerHTML = 'Il mio numero fortunato è ' + myNumber;
 
 
-//frase unica:
+//generatore password:
 
-document.getElementById('dimostrazione-unica').innerHTML = 'Mi chiamo ' + firstName + '&nbsp;' + surName + ' , il mio colore preferito è ' + myColor + ' e il mio numero fortunato è ' + myNumber;
+document.getElementById('password').innerHTML = 
+ `
+${firstName}${surName}${myColor}${myNumber}
+  
+ `;
+
